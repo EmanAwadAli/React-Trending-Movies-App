@@ -75,7 +75,7 @@ export default function Navbar({ userData, logOut }) {
 
                   <li className="nav-item">
                     <NavLink className="nav-link " to="login">
-                      Loginjjjjjjjjjjjjj
+                      Login
                     </NavLink>
                   </li>
                 </>
