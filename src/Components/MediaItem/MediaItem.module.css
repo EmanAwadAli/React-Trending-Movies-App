@@ -1,0 +1,28 @@
+.media_item { position: relative; margin-bottom: 30px; }
+
+.image {
+    margin-bottom: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.title { font-size: 14px; color: var(--color-main); }
+
+.vote_avg {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    padding: 2px 5px;
+    font-size: 11px;
+    background: var(--light-bg);
+    color: var(--color-main);
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    border-radius: 5px;
+}
