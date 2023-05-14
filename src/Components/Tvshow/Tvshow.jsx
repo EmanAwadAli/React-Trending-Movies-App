@@ -24,12 +24,12 @@ export default function TvShow() {
   }, []);
 
   return (
-    <section className="tvshow py-5">
+    <section className="tvshow py-3">
       <div className="container">
         <div className="row">
           {tv ? (
             tv.map((tvShow) => (
-              <div className="col-md-3 mb-3" key={tvShow.id}>
+              <div className="col-6 col-md-4 col-lg-3 mb-3" key={tvShow.id}>
                 <MediaItem media={tvShow} media_type={media_type} />
               </div>
             ))

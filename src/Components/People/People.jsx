@@ -23,12 +23,12 @@ export default function People() {
     getPeople(1);
   }, []);
   return (
-    <section className="people py-5">
+    <section className="people py-3">
       <div className="container">
         <div className="row">
           {people ? (
             people.map((person) => (
-              <div className="col-md-3 mb-3" key={person.id}>
+              <div className="col-6 col-md-4 col-lg-3 mb-3" key={person.id}>
                 <MediaItem media={person} media_type={media_type} />
               </div>
             ))

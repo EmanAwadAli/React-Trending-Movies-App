@@ -6,7 +6,7 @@ export default function Movies({ movies }) {
     <section className="movies py-3">
       <div className="container">
         <div className="row">
-          <div className="col-md-4 d-flex align-items-center ">
+          <div className="col-md-4 col-lg-3 col-xl-4 d-flex align-items-center mb-4 mb-md-0 ">
             <div>
               <div className="brdr w-25 mb-3"></div>
               <h2>
@@ -17,7 +17,10 @@ export default function Movies({ movies }) {
             </div>
           </div>
           {movies.slice(0, 10).map((movie) => (
-            <div className="col-md-2 mb-2" key={movie.id}>
+            <div
+              className="col-sm-6 col-md-4 col-lg-3 col-xl-2 mb-2"
+              key={movie.id}
+            >
               <MediaItem media={movie} />
             </div>
           ))}

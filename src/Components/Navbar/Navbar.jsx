@@ -13,19 +13,16 @@ export default function Navbar({ userData, logOut }) {
             className="navbar-toggler"
             type="button"
             data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
+            data-bs-target="#main-menu"
+            aria-controls="main-menu"
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
             <span className="navbar-toggler-icon"></span>
           </button>
-          <div
-            className="collapse navbar-collapse "
-            id="navbarSupportedContent"
-          >
+          <div className="collapse navbar-collapse " id="main-menu">
             {userData ? (
-              <ul className="navbar-nav me-auto mb-2 mb-lg-0 ">
+              <ul className="navbar-nav me-auto">
                 <li className="nav-item">
                   <NavLink className="nav-link" aria-current="page" to="/">
                     Home
@@ -51,17 +48,16 @@ export default function Navbar({ userData, logOut }) {
             ) : (
               ""
             )}
-            <ul className="navbar-nav mb-2 mb-lg-0 ms-auto ">
-              <li className="nav-item d-flex align-items-center">
+            <ul className="navbar-nav mb-2 mb-lg-0 ms-auto">
+              <li className="nav-item d-flex align-items-center d-none d-lg-flex">
                 <i className="fab mx-2 fa-facebook"></i>
                 <i className="fab mx-2 fa-twitter"></i>
                 <i className="fab mx-2 fa-instagram"></i>
                 <i className="fab mx-2 fa-soundcloud"></i>
               </li>
-
               {userData ? (
                 <li className="nav-item">
-                  <span onClick={logOut} className="nav-link pointer">
+                  <span onClick={logOut} className="nav-link cursor-pointer">
                     Logout
                   </span>
                 </li>
@@ -72,7 +68,6 @@ export default function Navbar({ userData, logOut }) {
                       Register
                     </NavLink>
                   </li>
-
                   <li className="nav-item">
                     <NavLink className="nav-link " to="login">
                       Login

@@ -23,12 +23,12 @@ export default function Movies() {
     getMovies(1);
   }, []);
   return (
-    <section className="movies py-5">
+    <section className="movies py-3">
       <div className="container">
         <div className="row">
           {movies ? (
             movies.map((movie) => (
-              <div className="col-md-3 mb-3" key={movie.id}>
+              <div className="col-6 col-md-4 col-lg-3 mb-3" key={movie.id}>
                 <MediaItem media={movie} media_type={media_type} />
               </div>
             ))

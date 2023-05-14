@@ -1,4 +1,3 @@
-import "./App.css";
 import { createHashRouter, RouterProvider } from "react-router-dom";
 import Layout from "./Components/Layout/Layout";
 import Home from "./Components/Home/Home";

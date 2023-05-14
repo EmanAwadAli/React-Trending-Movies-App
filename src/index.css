@@ -10,7 +10,7 @@
 
 body{
   background-image: url(./assets/bg.jpg);
-  background-size: 100%;
+  background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
   color: var(--color-main);
@@ -59,6 +59,9 @@ footer{
   margin-top: auto;
   background-color : rgba(13, 17, 22, .5)
 }
+.pagination { display: flex; flex-wrap: wrap; }
+
+.cursor-pointer { cursor: pointer; }
 
 /* Loader */
 
@@ -115,4 +118,22 @@ footer{
     transform: rotate(-360deg);
   }
 }
-    
+
+
+@media(min-width:768px) {
+
+  ::-webkit-scrollbar {
+      width: 11px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+      background: #ccc
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+      background: var(--light-bg);
+  }
+  
+}
