@@ -1,9 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import { useFormik } from "formik";
 import * as Yup from "yup";
-import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
+
 export default function Register() {
   let navigate = useNavigate();
   let [apiError, setApiError] = useState("");
@@ -55,9 +55,9 @@ export default function Register() {
     }
   }
   return (
-    <div className="container">
+    <div className="container py-3 py-md-5">
       <div className="w-100">
-        <h3>Register Now</h3>
+        <h3 className="mb-3">Register Now</h3>
         <form onSubmit={formik.handleSubmit}>
           {apiError ? (
             <span className="d-block text-danger">{apiError}</span>
@@ -144,7 +144,7 @@ export default function Register() {
           ) : (
             ""
           )}
-          <button type="submit" className="btn btn-info text-white">
+          <button type="submit" className="btn light-bg text-white mt-2">
             {loading ? (
               <i className="fa-solid fa-spinner fa-spin"></i>
             ) : (

@@ -41,27 +41,45 @@ body::before {
 
 a { text-decoration: none; }
 
+a, .btn,
+button {
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  -ms-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
 .brdr{
   background-color: var(--border-color);
   height: 1px;
 
 }
 
-nav{
-  color: var(--color-main) !important;
+nav { color: var(--color-main) !important; }
 
-}
-h3{
-  color: var(--light-bg);
-}
+h3 { color: var(--light-bg); }
+
+.light-bg { background: var(--light-bg); }
+
+.light-bg:hover { background: var(--light-bg); opacity: .9; }
 
 footer{
   margin-top: auto;
   background-color : rgba(13, 17, 22, .5)
 }
+
 .pagination { display: flex; flex-wrap: wrap; }
 
 .cursor-pointer { cursor: pointer; }
+
+.navbar-toggler:focus {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  -ms-box-shadow: none;
+  -o-box-shadow: none;
+  box-shadow: none;
+}
 
 /* Loader */
 

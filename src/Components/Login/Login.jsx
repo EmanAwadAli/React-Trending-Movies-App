@@ -42,10 +42,9 @@ export default function Login({ saveUserData }) {
     }
   }
   return (
-    <div className="container">
-      {" "}
+    <div className="container py-3 py-md-5">
       <div>
-        <h3>Login</h3>
+        <h3 className="mb-3">Login</h3>
         <form onSubmit={formik.handleSubmit}>
           {apiError ? (
             <span className="d-block text-danger">{apiError}</span>
@@ -84,7 +83,7 @@ export default function Login({ saveUserData }) {
           ) : (
             ""
           )}
-          <button type="submit" className="btn btn-info text-white">
+          <button type="submit" className="btn light-bg text-white mt-2">
             {loading ? (
               <i className="fa-solid fa-spinner fa-spin"></i>
             ) : (
