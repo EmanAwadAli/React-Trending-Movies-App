@@ -1,4 +1,4 @@
-#  📺Trending Movies
+#  📺 Trending Movies
 ## 📌 Overview
 In this project, I created a web application that displays a set of trending movies, tvshows and people and its related details.
 
