@@ -28,4 +28,4 @@ npm start
 
 ![image](https://github.com/EmanAwadAli/Trending-Movies/assets/54704537/4797b59f-e749-4306-bf69-b349f4f3a782)
 
-###### 👉 Deployment Link : [trending-movies](https://trending-movies-ashen.vercel.app/)
+###### 👉 Deployment Link : [trending-movies](https://trending-movies-ashen.vercel.app)
