@@ -1,6 +1,6 @@
 #  📺 Trending Movies
 ## 📌 Overview
-In this project, I created a web application that displays a set of trending movies, tvshows and people and they related details.
+In this project, I created a web application that displays a set of trending movies, Tv shows and people and they related details.
 
 ## 📥 Installation
 
